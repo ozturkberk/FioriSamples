@@ -1,0 +1,18 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZMM_PERSONEL_SETTINGS_SRV" xml:lang="tr" sap:schema-version="1">
+			<EntityType Name="PRPersSetting" sap:content-version="1">
+				<Key><PropertyRef Name="Apptype"/></Key><Property Name="Apptype" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="AppType" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="UserName" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="UserName" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="User" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="User" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Werks" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="werks" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="OrderFlag" Type="Edm.Boolean" Nullable="false" sap:unicode="false" sap:label="Order Flag" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Active" Type="Edm.Boolean" Nullable="false" sap:unicode="false" sap:label="Me51n aktif mi değil mi ?" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityContainer Name="ZMM_PERSONEL_SETTINGS_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="PRPersSettingSet" EntityType="ZMM_PERSONEL_SETTINGS_SRV.PRPersSetting" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/></EntityContainer><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self"
+				href="https://ERPM.SUNEXPRESS.COM:443/sap/opu/odata/sap/ZMM_PERSONEL_SETTINGS_SRV/$metadata"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version"
+				href="https://ERPM.SUNEXPRESS.COM:443/sap/opu/odata/sap/ZMM_PERSONEL_SETTINGS_SRV/$metadata"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

@@ -1,0 +1,30 @@
+<mvc:View
+	controllerName="nm1.zsample1.controller.Worklist"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<l:VerticalLayout
+		class="sapUiContentPadding"
+		width="20%">
+		<l:content>
+			<Label text="Product" labelFor="productInput"/>
+			<Input
+				id="productInput"
+				type="Text"
+				placeholder="Enter Product ..."
+				showValueHelp="true"
+				valueHelpRequest="handleValueHelp"
+				value = "{viewModel>/productValue}"
+				>
+			</Input>
+		</l:content>
+				<Button type="Accept"
+						text="Accept"
+						press="onPress">
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+				</Button>
+	</l:VerticalLayout>
+</mvc:View>
